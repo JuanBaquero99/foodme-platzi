@@ -2,6 +2,19 @@
  * general purpose css-only components  *
  ****************************************/
 
+ .navbar-brand {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 40px; /* Ajusta este valor según lo necesites */
+}
+
+.nav-link {
+  font-size: 20px; /* Ajusta este valor según lo necesites */
+}
+
+.nav-item {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
 .fm-panel {
   background-color: #fff;
 
@@ -31,7 +44,6 @@
 .fm-right {
   text-align: right;
 }
-
 
 
 /****************************************
@@ -96,123 +108,9 @@ input.ng-invalid.ng-dirty {
   box-shadow: 0 0 6px #F8B9B7;
 }
 
-
-
-
 /****************************************
  * route specific css                   *
  ****************************************/
-
-
-/* customer */
-
-.fm-customer-bkg {
-  background-image: url(../img/customer_bkg.jpg);
-  opacity: 0.4;
-  height: 705px;
-}
-
-
-/* restaurant list */
-
-.fm-restaurant-list {
-  min-height: 646px !important;
-}
-
-.fm-restaurant-list table {
-  margin: -10px -20px -20px -10px;
-  width: 700px;
-}
-
-.fm-restaurant-list th:first-child {
-  width: 500px;
-}
-
-.fm-restaurant-list th {
-  width: 100px;
-}
-
-.fm-restaurant-list img {
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
-}
-
-
-/* menu */
-
-.fm-restaurant  {
-  margin-bottom: 20px;
-}
-
-.fm-restaurant h3 {
-  margin-top: 0;
-}
-
-.fm-restaurant img {
-  width: 150px;
-  height: 150px;
-}
-
-.fm-restaurant .fm-rating {
-  display: block;
-}
-
-.fm-menu-list li {
-  list-style-type: none;
-}
-
-.fm-menu-list li span {
-  padding-right: 20px;
-}
-
-.fm-menu-list a {
-  color: inherit;
-}
-
-.fm-menu-list a:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.fm-menu-list .icon-plus-sign {
-  visibility: hidden;
-}
-
-.fm-menu-list li:hover .icon-plus-sign {
-  visibility: visible;
-}
-
-.fm-menu-list li:hover {
-  color: black;
-}
-
-.fm-menu-list ul li {
-  text-align: center;
-}
-
-.fm-cart li {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.fm-cart .icon-remove-sign {
-  visibility: hidden;
-}
-
-.fm-cart li:hover .icon-remove-sign {
-  visibility: visible;
-}
-
-.fm-cart form {
-  padding-left: 2px;
-}
-
-.fm-cart p {
-  padding-left: 20px;
-  padding-top: 5px;
-}
 
 
 /* checkout */
