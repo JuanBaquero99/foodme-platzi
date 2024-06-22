@@ -60,10 +60,8 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
 
   app.post(API_URL_ORDER, jsonParser, function(req, res, next) {
     logger.info(req.body, 'checkout');
-
-    /*************************************
-    /*         Custom attributes         *
-    /*************************************
+       
+    
     var order = req.body;
     var itemCount = 0;
     var orderTotal = 0;
@@ -78,7 +76,7 @@ exports.start = function(PORT, STATIC_DIR, DATA_FILE, TEST_DIR) {
       'itemCount': itemCount,
       'orderTotal': orderTotal
     });
-    /*************************************/
+    
 
     return res.send(201, { orderId: Date.now()});
   });

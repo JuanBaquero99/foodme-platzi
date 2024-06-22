@@ -42,25 +42,32 @@
           <div class="card-body">
             <h4 class="card-title">
               <ng-pluralize count="restaurants.length" when="{'0'    : 'No restaurants found. :-(',
-                                     'one'  : '1 restaurant found!',
-                                     'other': '{} restaurants found!'}">
+                                         'one'  : '1 restaurant found!',
+                                         'other': '{} restaurants found!'}">
               </ng-pluralize>
             </h4>
             <div class="row">
               <div class="col-md-4" ng-repeat="restaurant in restaurants">
                 <div class="restaurant-card">
                   <a href="#/menu/{{restaurant.id}}">
-                    <img class="rounded float-left" ng-src="img/restaurants/{{restaurant.id}}.jpg">
+                    <img class="rounded float-left" ng-src="img/restaurants/{{restaurant.id}}.png">
                     <div class="container">
                       <h4><b>{{restaurant.name}}</b></h4>
-                      <div class="price">
-                        <fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true"></fm-rating>
-                      </div>
-                      <div class="rating">
-                        <fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>
+                      <div class="price-rating-icon">
+                        <div class="price">
+                          <fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true"></fm-rating>
+                        </div>
+                        <div class="rating">
+                          <fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>
+                        </div>
+                        <img class="icon" ng-src="../../img/logo.png"> <!-- Reemplaza 'img/icon.png' con la ruta al ícono que deseas usar -->
                       </div>
                     </div>
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>

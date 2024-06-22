@@ -1,8 +1,8 @@
 /****************************************
  * general purpose css-only components  *
  ****************************************/
-
- .navbar-brand {
+ 
+.navbar-brand {
   font-family: 'Six Caps', sans-serif;
   font-size: 40px; /* Ajusta este valor según lo necesites */
 }

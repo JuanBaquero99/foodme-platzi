@@ -132,16 +132,18 @@ body {
   }
   
   .restaurant-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 10px;
-    transition: 0.3s;
-    width: 100%;
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Bordes más redondeados */
+    padding: 20px; /* Aumenta el padding para un mejor espaciado */
+    margin: 20px 0; /* Aumenta el margen para más espacio entre las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el transform y la sombra */
+    background-color: #f8f9fa; /* Color de fondo suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
   }
   
   .restaurant-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño de la tarjeta al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más profunda al pasar el mouse */
   }
   
   /* Estilo para las imágenes de los restaurantes */
@@ -151,7 +153,64 @@ body {
     height: 200px;
     object-fit: cover;
   }
+
+  .restaurant-card h4 {
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente para mejorar la legibilidad */
+    color: #333; /* Color de texto más oscuro para mejorar el contraste */
+  }
   
+  .restaurant-card .rating, .restaurant-card .price {
+    font-size: 14px; /* Aumenta el tamaño de la fuente para mejorar la legibilidad */
+    color: #007bff; /* Cambia el color a un azul más brillante */
+    margin-right: 10px; /* Agrega un poco de espacio a la derecha */
+  }
+  
+  .restaurant-card .rating::before, .restaurant-card .price::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 20px; /* Asegura que el ícono esté centrado verticalmente */
+    vertical-align: middle; /* Alinea el ícono con el texto */
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  
+  .restaurant-card .rating::before {
+    content: "\2605"; /* Agrega un ícono de estrella antes de la calificación */
+    font-size: 15px; /* Ajusta el tamaño del ícono de la estrella */
+    margin-right: 5px; /* Agrega un poco de espacio a la derecha del ícono de la estrella */
+    color: darkorange;
+
+  }
+  
+  .restaurant-card .price::before {
+    content: "\0024"; /* Agrega un ícono de dólar antes del precio */
+    font-size: 15px;
+    color: green;
+  }
+
+  .restaurant-card .price-rating-icon {
+    display: flex; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+  }
+  
+  .restaurant-card .price-rating-icon .icon {
+    width: 25px; /* Reduce el ancho del ícono */
+    height: 20px; /* Reduce la altura del ícono */
+    margin-left: 5px; /* Reduce el espacio a la izquierda del ícono */
+    animation: bounce 0.5s linear;
+    animation-iteration-count: 5;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
   
   /* menu */
 
@@ -233,17 +292,6 @@ body {
     color: #000000;
 }
 
-.restaurant-card .rating {
-  font-size: 1.2em;
-  color: #FF9100; /* color naranja para el rating */
-  font-weight: 500; /* semi-negrita */
-}
-
-.restaurant-card .price {
-  font-size: 1.2em;
-  color: #4CAF50; /* color verde para el precio */
-  font-weight: 500; /* semi-negrita */
-}
 
 
   
