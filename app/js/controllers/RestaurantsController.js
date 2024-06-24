@@ -106,4 +106,6 @@ foodMeApp.controller('RestaurantsController',
     colombia: '🥟'
   };
 
+  
+
 });

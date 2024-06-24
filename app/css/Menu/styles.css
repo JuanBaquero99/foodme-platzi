@@ -1,33 +1,54 @@
 body {
     font-family: 'Archivo Narrow', sans-serif;
-  }
-  
-  .fm-panel {
-    background-color: rgba(255, 255, 255, 0.8); /* Hace que los cuadros de contenido sean transparentes */
-    margin: 10px 0; /* Agrega margen arriba y abajo para mejorar la ubicación */
-    padding: 20px; /* Agrega padding para dar más espacio al contenido */
-    border-radius: 10px; /* Agrega bordes redondeados */
-  }
-  
-  .fm-menu-list li {
-    display: flex;
-    justify-content: space-between; /* Distribuye el contenido de cada ítem del menú a lo largo del eje horizontal */
-    margin-bottom: 10px; /* Agrega margen abajo para separar los ítems del menú */
-  }
-  
-  .fm-menu-list li span {
-    margin-right: 10px; /* Agrega margen a la derecha para separar el nombre y el precio del ítem del menú */
-  }
-  
-  .fm-cart {
-    position: sticky;
-    top: 0; /* Hace que el carrito de compras se quede en la parte superior de la página al desplazarse */
-  }
+}
 
-  .product-name {
-    font-weight: bold; /* Hace que los nombres de los productos sean negrita */
-  }
-  
-  .product-price {
-    color: green; /* Hace que los precios de los productos sean verdes */
-  }
+.fm-panel {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fm-menu-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fm-menu-list li span {
+    margin-right: 10px;
+}
+
+/* Ajustes para la imagen y la descripción del restaurante */
+.fm-restaurant .row > div {
+    display: flex;
+    align-items: center;
+}
+
+.fm-restaurant img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.fm-restaurant .col-10 div {
+    font-size: 16px;
+}
+
+.restaurant-description {
+    margin-left: 100px;
+}
+
+/* Estilizar el contenedor de dirección, calificación y precio */
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Estilizar la calificación y el precio para que tengan un ancho completo */
+.fm-rating {
+    width: 100%;
+}

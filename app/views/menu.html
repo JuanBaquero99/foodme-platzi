@@ -16,7 +16,7 @@
           <fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>
           <fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true"></fm-rating>
         </div>
-        <div class="col-4">
+        <div class="col-4 restaurant-description">
           <div>{{restaurant.description}}</div>
         </div>
       </div>
@@ -29,7 +29,7 @@
     <ul class="row">
       <li class="col-6" ng-repeat="menuItem in restaurant.menuItems">
         <a href ng-click="cart.add(menuItem, restaurant)">
-          <img src="{{menuItem.image}}" class="img-fluid rounded mb-3">
+          <img src="img/cuisines/{{menuItem.name}}.png" class="rounded">
           <div class="d-flex justify-content-between">
             <span class="product-name">{{menuItem.name}}</span>
             <span class="product-price">${{menuItem.price}}</span>
@@ -44,6 +44,7 @@
       <ul class="list-unstyled">
         <li ng-repeat="item in cart.items">
           <a href ng-click="cart.remove(item)"><i class="icon-remove-sign"></i></a>
+          <img src="img/cuisines/{{menuItem.name}}.png" class="rounded">
           {{item.qty}} &times; {{item.name}}
         </li>
       </ul>

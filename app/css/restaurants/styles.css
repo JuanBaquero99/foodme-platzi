@@ -55,8 +55,9 @@ body {
   }
   
   .card-title {
+    font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.9em;
-    color: #FFAD73;
+    color: #000000;
     margin-bottom: 20px;
   }
   
