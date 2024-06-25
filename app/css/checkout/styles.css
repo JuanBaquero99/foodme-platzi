@@ -1,0 +1,61 @@
+/* Estilos Generales del Formulario */
+.fm-panel {
+    background-color: rgba(249, 249, 249, 0.9); /* Ajusta la transparencia aquí */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  }
+  
+  
+  /* Estilos de la Tabla */
+  .table {
+    background-color: #fff;
+  }
+  .table th {
+    background-color: #f2f2f2;
+  }
+  .table-hover tbody tr:hover {
+    background-color: #e9e9e9;
+  }
+  
+  /* Botones */
+  .btn {
+    border: none;
+    font-weight: bold;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  .btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+  /* Inputs y Selects */
+  .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  .form-control, .btn {
+    border-radius: 0.25rem; /* Bordes redondeados para un look moderno */
+  }
+  .btn-primary, .btn-secondary, .btn-warning {
+    font-weight: bold; /* Asegura que el texto sea bold para mejor legibilidad */
+  }
+  
+  /* Mejoras Visuales Adicionales */
+  .h5, h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }

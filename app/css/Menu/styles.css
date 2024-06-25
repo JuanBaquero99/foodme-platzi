@@ -1,54 +1,126 @@
 body {
     font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+}
+
+span.product-name, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #000; /* Texto negro para títulos y nombres de productos */
 }
 
 .fm-panel {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #E5E5E5; /* Fondo blanco para paneles */
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fm-menu-list .row, .fm-restaurant .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fm-menu-list li, .fm-restaurant .row > div, .col-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .fm-menu-list li {
-    display: flex;
-    justify-content: space-between;
+    flex: 0 1 calc(50% - 40px);
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .fm-restaurant .col-2 img {
+        width: 80px;
+    }
+    .restaurant-description div, span.product-price, .fm-rating {
+        font-size: 0.9em; /* Tamaño de fuente uniforme para descripción, precio y calificación */
+    }
+}
+
+.fm-menu-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fm-menu-list li img, .product-image {
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
-.fm-menu-list li span {
-    margin-right: 10px;
+.fm-menu-list li span, .fm-restaurant .col-10 div {
+    font-size: 1em; /* Tamaño de fuente incrementado para mejorar la legibilidad */
+    line-height: 1.4;
 }
 
-/* Ajustes para la imagen y la descripción del restaurante */
-.fm-restaurant .row > div {
+.restaurant-description, .ratings-price-container, .fm-rating {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.fm-restaurant img {
-    max-width: 100%;
-    border-radius: 5px;
+.ratings-price-container {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.fm-restaurant .col-10 div {
-    font-size: 16px;
+.fm-cart img.product-image {
+    width: 15%;
+}
+
+.fm-cart .btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FFAD73; /* Color inspirado en Rappi */
+    border: none;
+    color: black;
+}
+
+.center-menu {
+    margin: 0 auto;
+    float: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fm-restaurant .col-2 {
+    padding-right: 20px;
 }
 
 .restaurant-description {
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
-/* Estilizar el contenedor de dirección, calificación y precio */
-.col-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
+.fm-restaurant .col-2 img {
+    width: 150px;
+    height: auto;
 }
 
-/* Estilizar la calificación y el precio para que tengan un ancho completo */
-.fm-rating {
-    width: 100%;
+.restaurant-description div {
+    font-size: 1em;
+}
+
+span.product-price, .fm-rating {
+    font-size: 1em; /* Tamaño de fuente aumentado para precio y calificación */
+    color: #FFAD73; /* Color actualizado a #FFAD73 para destacar */
+    font-weight: bold; /* Texto en negrita para mayor impacto */
 }
