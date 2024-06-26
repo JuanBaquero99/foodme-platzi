@@ -7,13 +7,14 @@
   <div class="row">
     <div class="col-2">
       <img src="img/logo/{{restaurant.cuisine}}.png" alt="Logo">
+      <h2>{{restaurant.name}}</h2>
+      <fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating> 
     </div>
     <div class="col-8 restaurant-description">
       <div>{{restaurant.description}}</div>
     </div>
     <div class="col-2 ratings-price-container">
-      <fm-rating ng-model="$parent.restaurant.rating" readonly="true"></fm-rating>
-      <fm-rating ng-model="$parent.restaurant.price" symbol="$" readonly="true"></fm-rating>
+      
     </div>
   </div>
 </div>

@@ -86,6 +86,7 @@ foodMeApp.controller('RestaurantsController',
     thai: 'Thai',
     vegetarian: 'Vegetarian',
     colombia: 'Colombia',
+    french: 'French',
     
   };
   
@@ -103,7 +104,8 @@ foodMeApp.controller('RestaurantsController',
     pizza: '🍕',
     thai: '🍲',
     vegetarian: '🥦',
-    colombia: '🥟'
+    colombia: '🥟',
+    french: '🥖',
   };
 
   

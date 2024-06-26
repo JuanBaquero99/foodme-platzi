@@ -1,18 +1,34 @@
 /****************************************
  * general purpose css-only components  *
  ****************************************/
- 
-.navbar-brand {
+ .navbar-brand {
   font-family: 'Six Caps', sans-serif;
-  font-size: 40px; /* Ajusta este valor según lo necesites */
+  font-size: 40px; /* Ajustado para mayor visibilidad */
+  margin-right: 20px; /* Añade espacio a la derecha del logo */
 }
 
 .nav-link {
-  font-size: 20px; /* Ajusta este valor según lo necesites */
+  font-size: 20px; /* Tamaño adecuado para legibilidad */
+  color: #FFFFFF; /* Cambia el color del texto para mayor contraste */
+  transition: color 0.3s ease; /* Suaviza la transición de color */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #FFD700; /* Cambia el color al pasar el mouse o enfocar */
 }
 
 .nav-item {
   font-family: 'Archivo Narrow', sans-serif;
+  margin-right: 15px; /* Añade espacio entre los elementos del navbar */
+}
+
+/* Mejora la visibilidad del botón del menú en dispositivos móviles */
+.navbar-toggler {
+  border-color: #FFD700; /* Cambia el color del borde del botón */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#FFD700' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); /* Cambia el color del ícono del menú */
 }
 
 .fm-panel {
