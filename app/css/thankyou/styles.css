@@ -1,7 +1,24 @@
 body {
-    font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
+  position: relative;
+  margin: 0; /* Asegura que no haya espacio alrededor del borde del cuerpo */
+  height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana del navegador */
+  overflow: hidden; /* Evita desbordamiento si el contenido es más grande que el body */
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../img/check.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Ajusta este valor para cambiar la opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
 @keyframes confetti {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }

@@ -13,11 +13,6 @@
     width: 100%;
   }
   
-  @keyframes bgScroll {
-    from { background-position: 0 0; }
-    to { background-position: 0 100px; }
-  }
-  
   .form-horizontal {
     align-items: center; /* Centra los elementos horizontalmente */
     background: none;
@@ -92,4 +87,8 @@
   #customerName, #address, .btn-primary, ::placeholder {
     font-family: 'Archivo Narrow', sans-serif;
   }
-  
+  body {
+    background-image: linear-gradient(to bottom, #FFAD73 0%, #FDFDFD 100%), url('../../img/deli.png');
+    background-size: cover;
+    background-position: center;
+  }

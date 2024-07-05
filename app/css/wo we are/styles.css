@@ -1,0 +1,27 @@
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    background-image: linear-gradient(to bottom, #FFAD73 0%, #FDFDFD 100%);
+    background-size: cover;
+    background-position: center;
+  }
+
+.fm-panel.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fm-panel .card-header {
+  color: #555;
+}
+
+.fm-panel p, .fm-panel li {
+  color: #333;
+  line-height: 1.6;
+}
+
+.fm-panel li {
+  margin-bottom: 5px;
+}
+
+.fm-panel hr {
+  border-color: #ddd;
+}

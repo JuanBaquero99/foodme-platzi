@@ -1,4 +1,10 @@
 /* Estilos Generales del Formulario */
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+  background-image: linear-gradient(to bottom, #FFAD73 0%, #FDFDFD 100%), url('../../img/empanada2.png');
+  background-size: cover;
+  background-position: center;
+}
 .fm-panel {
   background-color: rgba(249, 249, 249, 0.9);
   padding: 20px;

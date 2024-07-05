@@ -2,6 +2,10 @@ body {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 20px;
     color: #333; /* Color de texto más oscuro para mejor contraste */
+    background-image: linear-gradient(to bottom, #FFAD73 0%, #FDFDFD 100%);
+    background-size: cover;
+    background-position: center;
+    
 }
 body, span.product-name, h1, h2, h3, h4, h5, h6, .restaurant-description div, span.product-price, .fm-rating {
     font-family: 'Archivo Narrow', sans-serif; /* Fuente uniforme */
