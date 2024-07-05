@@ -102,3 +102,13 @@ body::before {
     transform: scale(1.1); /* Aumenta el tamaño */
     transition: transform 0.3s ease-in-out;
   }
+  .btn-primary {
+    background-color: #FFAD73;
+    border-color: #FFAD73;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #FFAD73; /* Mantiene el color de fondo igual al pasar el cursor */
+    border-color: #FFAD73; /* Mantiene el color del borde igual al pasar el cursor */
+  }
