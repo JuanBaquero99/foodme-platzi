@@ -60,6 +60,34 @@
 .fm-right {
   text-align: right;
 }
+/* Estilos para el campo de búsqueda */
+.form-control {
+  font-size: 16px; /* Aumenta la legibilidad */
+  padding: 10px 40px; /* Más espacio interior para un aspecto moderno y ampliado horizontalmente */
+  border-radius: 20px; /* Bordes redondeados para un look moderno */
+  border: none; /* Se quita el borde */
+}
+
+/* Estilos actualizados para el botón de búsqueda */
+.btn-outline-success {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 14px; /* Reducido para hacer el icono de lupa más pequeño */
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none; /* Se mantiene sin borde */
+  padding: 10px 20px; /* Ajuste del padding para igualar el campo de búsqueda */
+  border-radius: 20px; /* Bordes redondeados para coincidir con el campo de búsqueda */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición ajustada */
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+  color: #0a0a0a; /* Color más oscuro al pasar el mouse o enfocar */
+  background-color: #FFFFFF;
+}
+.bg-custom {
+  background-color: #FFAD73;
+}
+
 
 
 /****************************************
