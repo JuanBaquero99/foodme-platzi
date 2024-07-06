@@ -1,37 +1,49 @@
+/* Global styles */
 body {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 20px;
-    color: #333; /* Color de texto más oscuro para mejor contraste */
+    color: #333; /* Darker text color for better contrast */
     background-image: linear-gradient(to bottom, #FFAD73 0%, #FDFDFD 100%);
     background-size: cover;
     background-position: center;
-    
 }
+
+/* Font uniformity for specific elements */
 body, span.product-name, h1, h2, h3, h4, h5, h6, .restaurant-description div, span.product-price, .fm-rating {
-    font-family: 'Archivo Narrow', sans-serif; /* Fuente uniforme */
+    font-family: 'Archivo Narrow', sans-serif;
 }
+
+/* Text color and font for titles and product names */
 span.product-name, h1, h2, h3, h4, h5, h6 {
     font-family: 'Archivo Narrow', sans-serif;
-    color: #000; /* Texto negro para títulos y nombres de productos */
+    color: #000; /* Black text for titles and product names */
 }
+
+/* Panel styling */
 .fm-panel {
-    background-color: #E5E5E5; /* Fondo blanco para paneles */
+    background-color: #E5E5E5; /* White background for panels */
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Flex layout for menu and restaurant sections */
 .fm-menu-list .row, .fm-restaurant .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/* Flex layout and styling for menu items */
 .fm-menu-list li, .fm-restaurant .row > div, .col-2 {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
+/* Styling for individual menu items */
 .fm-menu-list li {
     flex: 0 1 calc(50% - 40px);
     flex-direction: column;
@@ -44,18 +56,24 @@ span.product-name, h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease;
     height: auto;
 }
+
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .fm-restaurant .col-2 img {
         width: 80px;
     }
     .restaurant-description div, span.product-price, .fm-rating {
-        font-size: 0.9em; /* Tamaño de fuente uniforme para descripción, precio y calificación */
+        font-size: 0.9em; /* Uniform font size for description, price, and rating */
     }
 }
+
+/* Hover effect for menu items */
 .fm-menu-list li:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Image styling for menu items and product images */
 .fm-menu-list li img, .product-image {
     width: auto;
     height: auto;
@@ -64,112 +82,125 @@ span.product-name, h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+/* Font size and line height for text elements */
 .fm-menu-list li span, .fm-restaurant .col-10 div {
-    font-size: 1em; /* Tamaño de fuente incrementado para mejorar la legibilidad */
+    font-size: 1em;
     line-height: 1.4;
 }
+
+/* Flex layout for restaurant description and rating sections */
 .restaurant-description, .ratings-price-container, .fm-rating {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.ratings-price-container {
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
 
+/* Adjustments for the checkout cart */
 .fm-cart {
-    position: fixed; /* Cambiado de 'sticky' a 'fixed' para asegurar visibilidad */
-    right: 20px; /* Posicionado a la derecha para evitar solapamientos */
-    top: 80px; /* Ajustado para evitar solapamiento con la barra de navegación */
-    width: 300px; /* Ancho fijo para mantener la consistencia */
-    max-height: 80%; /* Altura máxima para evitar que ocupe toda la pantalla */
-    overflow-y: auto; /* Permite desplazamiento si el contenido excede la altura máxima */
-    z-index: 1050; /* Asegura que el carrito esté por encima de otros elementos */
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    max-height: 80%;
+    overflow-y: auto;
+    z-index: 1050;
 }
 
-/* Mejoras visuales para el botón de checkout */
+/* Styling for checkout button */
 .fm-cart .btn-primary {
-    background-color: #007bff; /* Color más estándar para el botón */
-    color: #fff; /* Texto blanco para mejor contraste */
-    font-weight: bold; /* Negrita para destacar */
-    padding: 10px 15px; /* Ajuste de padding para un mejor aspecto */
-    border-radius: 5px; /* Bordes redondeados para coherencia con el diseño general */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajustes para la lista de artículos en el carrito para mejorar la legibilidad */
+/* List styling for cart items */
 .fm-cart ul.list-unstyled {
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margen por defecto */
-    list-style-type: none; /* Elimina los bullets de la lista */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-/* Estilos para los ítems del carrito para mejorar la disposición visual */
+/* Styling for cart item list items */
 .fm-cart ul.list-unstyled li {
-    display: flex; /* Usa flexbox para alinear los elementos */
-    align-items: center; /* Centra los elementos verticalmente */
-    justify-content: space-between; /* Distribuye el espacio entre elementos */
-    margin-bottom: 10px; /* Espacio entre ítems */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-/* Ajustes para las imágenes de los productos en el carrito */
+/* Styling for product images in the cart */
 .fm-cart img.product-image {
-    width: 50px; /* Tamaño fijo para las imágenes */
-    height: 50px; /* Altura fija para mantener la proporción */
-    border-radius: 50%; /* Hace las imágenes circulares */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-/* Ajustes para el texto de los ítems en el carrito para mejorar la legibilidad */
+/* Font size and color for cart item text */
 .fm-cart ul.list-unstyled li span {
-    font-size: 0.9rem; /* Tamaño de fuente reducido para ajustar al espacio */
-    color: #333; /* Color oscuro para mejor contraste */
+    font-size: 0.9rem;
+    color: #333;
 }
 
-/* Ajustes para el icono de eliminar ítem */
+/* Styling for delete item icon */
 .fm-cart i.icon-remove-sign {
-    cursor: pointer; /* Cambia el cursor a puntero para indicar acción */
-    color: #ff0000; /* Color rojo para indicar acción de eliminar */
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    cursor: pointer;
+    color: #ff0000;
+    margin-right: 5px;
 }
+
+/* Centering menu */
 .center-menu {
     margin: 0 auto;
     float: none;
     display: flex;
     justify-content: center;
 }
+
+/* Additional styling for restaurant section */
 .fm-restaurant .col-2 {
     padding-right: 20px;
 }
+
 .restaurant-description {
     margin-left: 20px;
 }
+
 .fm-restaurant .col-2 img {
-    width: 200px; /* Tamaño incrementado de 150px a 200px */
+    width: 200px; /* Increased size from 150px to 200px */
     height: auto;
 }
+
 .restaurant-description div {
     font-size: 1em;
 }
+
+/* Font size and color for product price and rating */
 span.product-price, .fm-rating {
-    font-size: 1em; /* Tamaño de fuente aumentado para precio y calificación */
-    color: #FFAD73; /* Color actualizado a #FFAD73 para destacar */
-    font-weight: bold; /* Texto en negrita para mayor impacto */
+    font-size: 1em;
+    color: #FFAD73; /* Updated color to #FFAD73 for emphasis */
+    font-weight: bold;
 }
+
 .fm-restaurant .col-2 h2 {
-    margin-top: 20px; /* Aumenta el espacio entre el logo y el h2 */
+    margin-top: 20px;
     font-family: 'Six Caps', sans-serif;
-    font-size: 30px; /* Ajusta según la necesidad visual */
+    font-size: 30px;
 }
+
 .col-2 {
     display: flex;
     flex-direction: column;
 }
+
 .col-2 img {
     order: 1;
 }
+
 .col-2 h2 {
     order: 2;
 }

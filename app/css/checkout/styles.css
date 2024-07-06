@@ -1,10 +1,11 @@
-/* Estilos Generales del Formulario */
+/* General Form Styles */
 body {
   font-family: 'Archivo Narrow', sans-serif;
   background-image: linear-gradient(to bottom, #FFAD73 0%, #FDFDFD 100%);
   background-size: cover;
   background-position: center;
 }
+
 .fm-panel {
   background-color: rgba(249, 249, 249, 0.9);
   padding: 20px;
@@ -13,18 +14,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de la Tabla */
+/* Table Styles */
 .table {
   background-color: #fff;
 }
+
 .table th {
   background-color: #f2f2f2;
 }
+
 .table-hover tbody tr:hover {
   background-color: #e9e9e9;
 }
 
-/* Botones */
+/* Buttons */
 .btn {
   border: none;
   font-weight: bold;
@@ -41,7 +44,7 @@ body {
 }
 
 .btn-primary:disabled {
-  background-color: #6c757d; /* Color oscuro para el botón deshabilitado */
+  background-color: #6c757d; /* Dark color for disabled button */
   color: #fff;
 }
 
@@ -54,40 +57,49 @@ body {
   background-color: #e00606;
 }
 
-/* Inputs y Selects */
+/* Inputs and Selects */
 .form-control {
   border-radius: 0.25rem;
   border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem; /* Ajusta el padding según sea necesario */
+  height: auto; /* Asegura que la altura se ajuste al contenido */
+  line-height: 1.5; /* Ajusta el line-height para mejorar la legibilidad */
 }
+.form-control option {
+  color: black; /* Asegura que el texto sea legible */
+}
+
 .form-control:focus {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
+
 .form-control, .btn {
   border-radius: 0.25rem;
 }
+
 .btn-primary, .btn-secondary, .btn-warning {
   font-weight: bold;
 }
 
-/* Mejoras Visuales Adicionales */
+/* Additional Visual Enhancements */
 .h5, h5 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-/* Aplicar fuente Narrow a los títulos */
+/* Apply Narrow font to headings */
 h4, h5 {
-  font-family: 'Nunito Sans', sans-serif; /* Cambia 'Nunito Sans' por 'Narrow' si esa es la fuente correcta */
+  font-family: 'Nunito Sans', sans-serif; /* Change to 'Narrow' if that's the correct font */
 }
 
 .form-control.qty-input {
-  width: auto; /* Ajustar según sea necesario, 'auto' para ajuste automático o un valor específico como '100px' */
-  min-width: 80px; /* Asegura un mínimo de ancho para mostrar la cantidad */
+  width: auto; /* Adjust as needed, 'auto' for automatic adjustment or a specific value like '100px' */
+  min-width: 80px; /* Ensure minimum width to display quantity */
 }
 
-/* Opcional: Ajustes para mejorar la visualización de la tabla */
+/* Optional: Adjustments to improve table display */
 .table th, .table td {
-  padding: 0.5rem; /* Ajustar el relleno para dar más espacio, si es necesario */
+  padding: 0.5rem; /* Adjust padding for more space if necessary */
 }

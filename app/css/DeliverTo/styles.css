@@ -1,24 +1,24 @@
-/* Estilos para el contenedor principal */
+/* Styles for the main container */
 .breadcrumb.fm-deliver-to {
-    background-color: #f8f9fa; /* Color de fondo suave */
-    padding: 15px; /* Aumenta el padding para un mejor espaciado */
-    border-radius: 8px; /* Bordes más redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
-    display: flex; /* Convierte el contenedor en un contenedor flex */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-  }
-  
-  /* Estilos para el enlace */
-  .breadcrumb.fm-deliver-to a {
-    color: #070300; /* Cambia el color del enlace a negro */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s ease; /* Transición suave del color */
-    margin-left: auto; /* Empuja el enlace hacia la derecha */
-    font-family: 'Archivo Narrow', sans-serif; /* Usa la fuente Archivo Narrow */
-  }
-  
-  /* Cambia el color del enlace al pasar el mouse */
-  .breadcrumb.fm-deliver-to a:hover {
-    color: #0056b3; /* Color más oscuro al pasar el mouse */
-  }
+  background-color: #f8f9fa; /* Soft background color */
+  padding: 15px; /* Increased padding for better spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Convert container to flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Styles for the link */
+.breadcrumb.fm-deliver-to a {
+  color: #070300; /* Change link color to black */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+  margin-left: auto; /* Push link to the right */
+  font-family: 'Archivo Narrow', sans-serif; /* Use Archivo Narrow font */
+}
+
+/* Change link color on hover */
+.breadcrumb.fm-deliver-to a:hover {
+  color: #0056b3; /* Darker color on hover */
+}
